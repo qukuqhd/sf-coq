@@ -1,0 +1,15 @@
+
+*.vo        # 编译后的二进制对象文件 (Compiled object files)
+*.vok       # 界面检查文件 (Interface check files)
+*.vos       # 只有类型信息的编译文件 (Compiled interface files)
+*.glob      # 辅助符号表文件 (Symbolic information for CoqDoc)
+*.aux       # 编译过程中的辅助文件 (Auxiliary files)
+
+Makefile    # 由 coq_makefile 自动生成的脚本 (建议忽略，由 _CoqProject 生成)
+Makefile.conf
+.coq-native/ # 原生编译产生的目录
+.vscoq/      # VsCoq 插件的临时文件
+
+.DS_Store
+.history/
+.vscode/     # 如果是个人的配置建议忽略，如果是团队共享配置可保留
