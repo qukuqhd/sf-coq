@@ -1,3 +1,472 @@
-DIGEST 237383c69bf76a1c007f6584256275f6
+DIGEST 85570118b41981b2daa8ce96681e53ea
 FLF.Induction
-R23:28 LF.Basics <> <> lib
+R47:52 LF.Basics <> <> lib
+R70:74 Stdlib.Arith.Arith <> <> lib
+prf 117:133 <> plus_n_0_firsttry
+R145:147 Corelib.Init.Datatypes <> nat ind
+binder 143:143 <> n:1
+R155:157 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R154:154 LF.Induction <> n:1 var
+R159:161 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R158:158 LF.Induction <> n:1 var
+prf 301:308 <> mult_0_r
+R321:323 Corelib.Init.Datatypes <> nat ind
+binder 319:319 <> n:2
+R335:337 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R331:333 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R330:330 LF.Induction <> n:2 var
+prf 462:470 <> plus_n_Sm
+R484:486 Corelib.Init.Datatypes <> nat ind
+binder 480:480 <> n:3
+binder 482:482 <> m:4
+R503:505 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R493:493 Corelib.Init.Datatypes <> S constr
+R497:499 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R496:496 LF.Induction <> n:3 var
+R500:500 LF.Induction <> m:4 var
+R507:509 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R506:506 LF.Induction <> n:3 var
+R510:510 Corelib.Init.Datatypes <> S constr
+R512:512 LF.Induction <> m:4 var
+prf 652:660 <> plus_comm
+R675:677 Corelib.Init.Datatypes <> nat ind
+binder 670:670 <> m:5
+binder 672:672 <> n:6
+R689:691 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R685:687 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R684:684 LF.Induction <> m:5 var
+R688:688 LF.Induction <> n:6 var
+R693:695 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R692:692 LF.Induction <> n:6 var
+R696:696 LF.Induction <> m:5 var
+R1013:1021 LF.Induction <> plus_n_Sm thm
+R1013:1021 LF.Induction <> plus_n_Sm thm
+R1013:1021 LF.Induction <> plus_n_Sm thm
+prf 1059:1068 <> plus_assoc
+R1086:1088 Corelib.Init.Datatypes <> nat ind
+binder 1079:1079 <> m:7
+binder 1081:1081 <> n:8
+binder 1083:1083 <> p:9
+R1106:1108 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1096:1099 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1105:1105 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1095:1095 LF.Induction <> m:7 var
+R1101:1103 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1100:1100 LF.Induction <> n:8 var
+R1104:1104 LF.Induction <> p:9 var
+R1109:1110 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1116:1120 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1112:1114 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1111:1111 LF.Induction <> m:7 var
+R1115:1115 LF.Induction <> n:8 var
+R1121:1121 LF.Induction <> p:9 var
+def 1283:1288 <> double
+R1293:1295 Corelib.Init.Datatypes <> nat ind
+binder 1291:1291 <> n:10
+R1298:1300 Corelib.Init.Datatypes <> nat ind
+R1315:1315 LF.Induction <> n:10 var
+R1341:1341 Corelib.Init.Datatypes <> S constr
+R1349:1349 Corelib.Init.Datatypes <> S constr
+R1352:1352 Corelib.Init.Datatypes <> S constr
+R1355:1360 LF.Induction <> double:11 def
+prf 1384:1394 <> double_plus
+binder 1404:1404 <> n:13
+R1420:1422 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1412:1417 LF.Induction <> double def
+R1419:1419 LF.Induction <> n:13 var
+R1424:1426 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R1423:1423 LF.Induction <> n:13 var
+R1427:1427 LF.Induction <> n:13 var
+R1633:1641 LF.Induction <> plus_n_Sm thm
+R1633:1641 LF.Induction <> plus_n_Sm thm
+R1633:1641 LF.Induction <> plus_n_Sm thm
+def 1680:1684 <> evenb
+R1689:1691 Corelib.Init.Datatypes <> nat ind
+binder 1687:1687 <> n:14
+R1694:1697 Corelib.Init.Datatypes <> bool ind
+R1712:1712 LF.Induction <> n:14 var
+R1730:1733 Corelib.Init.Datatypes <> true constr
+R1746:1750 Corelib.Init.Datatypes <> false constr
+R1758:1758 Corelib.Init.Datatypes <> S constr
+R1761:1761 Corelib.Init.Datatypes <> S constr
+R1770:1774 LF.Induction <> evenb:15 def
+prf 1797:1811 <> evenb_minus_tow
+R1824:1826 Corelib.Init.Datatypes <> nat ind
+binder 1822:1822 <> n:17
+R1848:1850 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1833:1837 LF.Induction <> evenb def
+R1840:1840 Corelib.Init.Datatypes <> S constr
+R1843:1843 Corelib.Init.Datatypes <> S constr
+R1845:1845 LF.Induction <> n:17 var
+R1851:1855 LF.Induction <> evenb def
+R1857:1857 LF.Induction <> n:17 var
+prf 1925:1931 <> evenb_S
+R1944:1946 Corelib.Init.Datatypes <> nat ind
+binder 1941:1941 <> n:18
+R1964:1965 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1953:1957 LF.Induction <> evenb def
+R1960:1960 Corelib.Init.Datatypes <> S constr
+R1962:1962 LF.Induction <> n:18 var
+R1966:1969 Corelib.Init.Datatypes <> negb def
+R1971:1975 LF.Induction <> evenb def
+R1977:1977 LF.Induction <> n:18 var
+R2078:2092 LF.Induction <> evenb_minus_tow thm
+R2078:2092 LF.Induction <> evenb_minus_tow thm
+R2078:2092 LF.Induction <> evenb_minus_tow thm
+R2120:2134 LF.Basics <> negb_involutive thm
+R2120:2134 LF.Basics <> negb_involutive thm
+R2120:2134 LF.Basics <> negb_involutive thm
+prf 2214:2225 <> mult_0_plus'
+R2242:2244 Corelib.Init.Datatypes <> nat ind
+binder 2236:2236 <> n:19
+binder 2238:2238 <> m:20
+R2260:2262 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2249:2249 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R2255:2258 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R2251:2253 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2254:2254 LF.Induction <> n:19 var
+R2259:2259 LF.Induction <> m:20 var
+R2264:2266 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R2263:2263 LF.Induction <> n:19 var
+R2267:2267 LF.Induction <> m:20 var
+R2309:2311 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2305:2307 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2309:2311 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2305:2307 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+prf 2378:2388 <> nat_self_eq
+R2401:2403 Corelib.Init.Datatypes <> nat ind
+binder 2398:2398 <> n:21
+R2420:2422 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2408:2414 Stdlib.Arith.PeanoNat Nat eqb def
+R2416:2416 LF.Induction <> n:21 var
+R2419:2419 LF.Induction <> n:21 var
+R2423:2426 Corelib.Init.Datatypes <> true constr
+prf 2562:2570 <> plus_swap
+R2588:2590 Corelib.Init.Datatypes <> nat ind
+binder 2581:2581 <> n:22
+binder 2583:2583 <> m:23
+binder 2585:2585 <> p:24
+R2608:2610 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2598:2601 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2607:2607 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2597:2597 LF.Induction <> n:22 var
+R2603:2605 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2602:2602 LF.Induction <> m:23 var
+R2606:2606 LF.Induction <> p:24 var
+R2616:2618 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2612:2614 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2611:2611 LF.Induction <> m:23 var
+R2615:2615 LF.Induction <> n:22 var
+R2619:2619 LF.Induction <> p:24 var
+R2691:2700 LF.Induction <> plus_assoc thm
+R2691:2700 LF.Induction <> plus_assoc thm
+R2691:2700 LF.Induction <> plus_assoc thm
+R2736:2744 LF.Induction <> plus_comm thm
+R2736:2744 LF.Induction <> plus_comm thm
+R2736:2744 LF.Induction <> plus_comm thm
+prf 2781:2793 <> mult_plus_one
+R2809:2811 Corelib.Init.Datatypes <> nat ind
+binder 2804:2804 <> m:25
+binder 2806:2806 <> n:26
+R2825:2827 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2819:2821 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R2818:2818 LF.Induction <> m:25 var
+R2822:2822 Corelib.Init.Datatypes <> S constr
+R2824:2824 LF.Induction <> n:26 var
+R2829:2831 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R2828:2828 LF.Induction <> m:25 var
+R2833:2835 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R2832:2832 LF.Induction <> m:25 var
+R2836:2836 LF.Induction <> n:26 var
+R3025:3033 LF.Induction <> plus_swap thm
+R3025:3033 LF.Induction <> plus_swap thm
+R3025:3033 LF.Induction <> plus_swap thm
+R3044:3052 LF.Induction <> plus_swap thm
+R3044:3052 LF.Induction <> plus_swap thm
+R3044:3052 LF.Induction <> plus_swap thm
+R3064:3072 LF.Induction <> plus_comm thm
+R3064:3072 LF.Induction <> plus_comm thm
+R3064:3072 LF.Induction <> plus_comm thm
+prf 3109:3117 <> mult_comm
+R3133:3135 Corelib.Init.Datatypes <> nat ind
+binder 3128:3128 <> m:27
+binder 3130:3130 <> n:28
+R3147:3149 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3143:3145 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3142:3142 LF.Induction <> m:27 var
+R3146:3146 LF.Induction <> n:28 var
+R3151:3152 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3150:3150 LF.Induction <> n:28 var
+R3153:3153 LF.Induction <> m:27 var
+R3233:3240 LF.Induction <> mult_0_r thm
+R3233:3240 LF.Induction <> mult_0_r thm
+R3233:3240 LF.Induction <> mult_0_r thm
+R3294:3306 LF.Induction <> mult_plus_one thm
+R3294:3306 LF.Induction <> mult_plus_one thm
+R3294:3306 LF.Induction <> mult_plus_one thm
+prf 3337:3344 <> leb_ref1
+R3356:3358 Corelib.Init.Datatypes <> nat ind
+binder 3354:3354 <> n:29
+R3377:3379 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3365:3371 Stdlib.Arith.PeanoNat Nat leb def
+R3373:3373 LF.Induction <> n:29 var
+R3376:3376 LF.Induction <> n:29 var
+R3380:3383 Corelib.Init.Datatypes <> true constr
+prf 3520:3530 <> zero_nbeq_S
+R3544:3546 Corelib.Init.Datatypes <> nat ind
+binder 3541:3541 <> n:30
+R3568:3570 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3553:3559 Stdlib.Arith.PeanoNat Nat eqb def
+R3564:3564 Corelib.Init.Datatypes <> S constr
+R3566:3566 LF.Induction <> n:30 var
+R3571:3575 Corelib.Init.Datatypes <> false constr
+prf 3702:3712 <> and_false_r
+R3724:3727 Corelib.Init.Datatypes <> bool ind
+binder 3722:3722 <> b:31
+R3746:3748 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3734:3737 Corelib.Init.Datatypes <> andb def
+R3741:3745 Corelib.Init.Datatypes <> false constr
+R3739:3739 LF.Induction <> b:31 var
+R3749:3753 Corelib.Init.Datatypes <> false constr
+prf 3868:3884 <> plus_ble_compat_l
+R3903:3905 Corelib.Init.Datatypes <> nat ind
+binder 3895:3895 <> n:32
+binder 3897:3897 <> m:33
+binder 3899:3899 <> p:34
+R3931:3934 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3924:3926 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3912:3918 Stdlib.Arith.PeanoNat Nat leb def
+R3920:3920 LF.Induction <> n:32 var
+R3923:3923 LF.Induction <> m:33 var
+R3927:3930 Corelib.Init.Datatypes <> true constr
+R3959:3961 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3935:3941 Stdlib.Arith.PeanoNat Nat leb def
+R3945:3947 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3944:3944 LF.Induction <> p:34 var
+R3948:3948 LF.Induction <> n:32 var
+R3954:3956 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3953:3953 LF.Induction <> p:34 var
+R3957:3957 LF.Induction <> m:33 var
+R3962:3965 Corelib.Init.Datatypes <> true constr
+prf 4129:4136 <> S_nbeq_0
+R4149:4151 Corelib.Init.Datatypes <> nat ind
+binder 4147:4147 <> n:35
+R4172:4174 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4156:4162 Stdlib.Arith.PeanoNat Nat eqb def
+R4165:4165 Corelib.Init.Datatypes <> S constr
+R4167:4167 LF.Induction <> n:35 var
+R4175:4179 Corelib.Init.Datatypes <> false constr
+prf 4231:4238 <> mult_1_l
+R4251:4253 Corelib.Init.Datatypes <> nat ind
+binder 4249:4249 <> n:36
+R4261:4263 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4257:4259 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4260:4260 LF.Induction <> n:36 var
+R4264:4264 LF.Induction <> n:36 var
+R4311:4327 LF.Induction <> plus_n_0_firsttry thm
+R4311:4327 LF.Induction <> plus_n_0_firsttry thm
+R4311:4327 LF.Induction <> plus_n_0_firsttry thm
+prf 4361:4369 <> all3_spec
+R4386:4389 Corelib.Init.Datatypes <> bool ind
+binder 4380:4380 <> b:37
+binder 4382:4382 <> c:38
+R4461:4465 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4396:4398 Corelib.Init.Datatypes <> orb def
+R4424:4426 Corelib.Init.Datatypes <> orb def
+R4453:4456 Corelib.Init.Datatypes <> negb def
+R4458:4458 LF.Induction <> c:38 var
+R4429:4432 Corelib.Init.Datatypes <> negb def
+R4434:4434 LF.Induction <> b:37 var
+R4407:4410 Corelib.Init.Datatypes <> andb def
+R4414:4414 LF.Induction <> c:38 var
+R4412:4412 LF.Induction <> b:37 var
+R4466:4469 Corelib.Init.Datatypes <> true constr
+prf 4650:4660 <> H_rearrange
+R4681:4683 Corelib.Init.Datatypes <> nat ind
+binder 4671:4671 <> a:39
+binder 4673:4673 <> b:40
+binder 4675:4675 <> c:41
+binder 4677:4677 <> d:42
+R4704:4706 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4700:4702 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4696:4698 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4692:4694 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4691:4691 LF.Induction <> a:39 var
+R4695:4695 LF.Induction <> b:40 var
+R4699:4699 LF.Induction <> c:41 var
+R4703:4703 LF.Induction <> d:42 var
+R4716:4718 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4712:4714 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4708:4710 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4707:4707 LF.Induction <> a:39 var
+R4711:4711 LF.Induction <> c:41 var
+R4715:4715 LF.Induction <> b:40 var
+R4719:4719 LF.Induction <> d:42 var
+R4766:4775 LF.Induction <> plus_assoc thm
+R4766:4775 LF.Induction <> plus_assoc thm
+R4766:4775 LF.Induction <> plus_assoc thm
+R4829:4837 LF.Induction <> plus_comm thm
+R4829:4837 LF.Induction <> plus_comm thm
+R4829:4837 LF.Induction <> plus_comm thm
+R4895:4904 LF.Induction <> plus_assoc thm
+R4895:4904 LF.Induction <> plus_assoc thm
+R4895:4904 LF.Induction <> plus_assoc thm
+prf 4945:4961 <> mult_plus_distr_r
+R4980:4982 Corelib.Init.Datatypes <> nat ind
+binder 4972:4972 <> n:43
+binder 4974:4974 <> m:44
+binder 4976:4976 <> p:45
+R4998:5000 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4987:4987 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4993:4996 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4989:4991 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4988:4988 LF.Induction <> n:43 var
+R4992:4992 LF.Induction <> m:44 var
+R4997:4997 LF.Induction <> p:45 var
+R5001:5001 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5007:5011 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5017:5017 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5003:5005 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5002:5002 LF.Induction <> n:43 var
+R5006:5006 LF.Induction <> p:45 var
+R5013:5015 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5012:5012 LF.Induction <> m:44 var
+R5016:5016 LF.Induction <> p:45 var
+R5101:5108 Corelib.Init.Peano <> mult_n_O thm
+R5101:5108 Corelib.Init.Peano <> mult_n_O thm
+R5101:5108 Corelib.Init.Peano <> mult_n_O thm
+R5124:5131 Corelib.Init.Peano <> mult_n_O thm
+R5124:5131 Corelib.Init.Peano <> mult_n_O thm
+R5124:5131 Corelib.Init.Peano <> mult_n_O thm
+R5152:5159 Corelib.Init.Peano <> mult_n_O thm
+R5152:5159 Corelib.Init.Peano <> mult_n_O thm
+R5152:5159 Corelib.Init.Peano <> mult_n_O thm
+R5197:5209 LF.Induction <> mult_plus_one thm
+R5197:5209 LF.Induction <> mult_plus_one thm
+R5197:5209 LF.Induction <> mult_plus_one thm
+R5220:5232 LF.Induction <> mult_plus_one thm
+R5220:5232 LF.Induction <> mult_plus_one thm
+R5220:5232 LF.Induction <> mult_plus_one thm
+R5249:5261 LF.Induction <> mult_plus_one thm
+R5249:5261 LF.Induction <> mult_plus_one thm
+R5249:5261 LF.Induction <> mult_plus_one thm
+R5286:5295 LF.Induction <> plus_assoc thm
+R5286:5295 LF.Induction <> plus_assoc thm
+R5286:5295 LF.Induction <> plus_assoc thm
+R5306:5315 LF.Induction <> plus_assoc thm
+R5306:5315 LF.Induction <> plus_assoc thm
+R5306:5315 LF.Induction <> plus_assoc thm
+R5330:5340 LF.Induction <> H_rearrange thm
+R5330:5340 LF.Induction <> H_rearrange thm
+R5330:5340 LF.Induction <> H_rearrange thm
+prf 5374:5383 <> mult_assoc
+R5399:5401 Corelib.Init.Datatypes <> nat ind
+binder 5393:5393 <> n:46
+binder 5395:5395 <> m:47
+binder 5397:5397 <> p:48
+R5420:5422 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5410:5413 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5419:5419 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5409:5409 LF.Induction <> n:46 var
+R5415:5417 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5414:5414 LF.Induction <> m:47 var
+R5418:5418 LF.Induction <> p:48 var
+R5423:5424 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5430:5434 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5426:5428 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R5425:5425 LF.Induction <> n:46 var
+R5429:5429 LF.Induction <> m:47 var
+R5435:5435 LF.Induction <> p:48 var
+R5587:5603 LF.Induction <> mult_plus_distr_r thm
+R5587:5603 LF.Induction <> mult_plus_distr_r thm
+R5587:5603 LF.Induction <> mult_plus_distr_r thm
+prf 5661:5670 <> plus_swap'
+R5688:5690 Corelib.Init.Datatypes <> nat ind
+binder 5681:5681 <> n:49
+binder 5683:5683 <> m:50
+binder 5685:5685 <> p:51
+R5708:5710 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5698:5701 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5707:5707 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5697:5697 LF.Induction <> n:49 var
+R5703:5705 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5702:5702 LF.Induction <> m:50 var
+R5706:5706 LF.Induction <> p:51 var
+R5712:5715 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5721:5721 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5711:5711 LF.Induction <> m:50 var
+R5717:5719 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5716:5716 LF.Induction <> n:49 var
+R5720:5720 LF.Induction <> p:51 var
+R5763:5772 LF.Induction <> plus_assoc thm
+R5763:5772 LF.Induction <> plus_assoc thm
+R5763:5772 LF.Induction <> plus_assoc thm
+R5783:5792 LF.Induction <> plus_assoc thm
+R5783:5792 LF.Induction <> plus_assoc thm
+R5783:5792 LF.Induction <> plus_assoc thm
+R5854:5856 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5867:5869 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5854:5856 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5867:5869 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5964:5972 LF.Induction <> plus_comm thm
+R5964:5972 LF.Induction <> plus_comm thm
+R5964:5972 LF.Induction <> plus_comm thm
+def 6012:6021 <> nat_to_bin
+R6025:6027 Corelib.Init.Datatypes <> nat ind
+binder 6023:6023 <> n:52
+R6030:6032 LF.Basics <> bin ind
+R6047:6047 LF.Induction <> n:52 var
+R6065:6065 LF.Basics <> Z constr
+R6073:6073 Corelib.Init.Datatypes <> S constr
+R6081:6084 LF.Basics <> incr def
+R6087:6096 LF.Induction <> nat_to_bin:53 def
+prf 6121:6135 <> bin_to_nat_incr
+R6147:6149 LF.Basics <> bin ind
+binder 6144:6144 <> b:55
+R6176:6178 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6156:6165 LF.Basics <> bin_to_nat def
+R6168:6171 LF.Basics <> incr def
+R6173:6173 LF.Induction <> b:55 var
+R6179:6179 Corelib.Init.Datatypes <> S constr
+R6182:6191 LF.Basics <> bin_to_nat def
+R6193:6193 LF.Induction <> b:55 var
+R6350:6358 LF.Induction <> plus_n_Sm thm
+R6350:6358 LF.Induction <> plus_n_Sm thm
+R6350:6358 LF.Induction <> plus_n_Sm thm
+R6369:6378 LF.Induction <> plus_assoc thm
+R6369:6378 LF.Induction <> plus_assoc thm
+R6369:6378 LF.Induction <> plus_assoc thm
+R6442:6444 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6425:6425 Corelib.Init.Datatypes <> S constr
+R6428:6437 LF.Basics <> bin_to_nat def
+R6445:6445 Corelib.Init.Datatypes <> S constr
+R6448:6457 LF.Basics <> bin_to_nat def
+R6396:6412 LF.Induction <> plus_n_0_firsttry thm
+R6442:6444 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6425:6425 Corelib.Init.Datatypes <> S constr
+R6428:6437 LF.Basics <> bin_to_nat def
+R6445:6445 Corelib.Init.Datatypes <> S constr
+R6448:6457 LF.Basics <> bin_to_nat def
+R6396:6412 LF.Induction <> plus_n_0_firsttry thm
+R6442:6444 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6425:6425 Corelib.Init.Datatypes <> S constr
+R6428:6437 LF.Basics <> bin_to_nat def
+R6445:6445 Corelib.Init.Datatypes <> S constr
+R6448:6457 LF.Basics <> bin_to_nat def
+R6396:6412 LF.Induction <> plus_n_0_firsttry thm
+R6509:6518 LF.Basics <> bin_to_nat def
+R6480:6496 LF.Induction <> plus_n_0_firsttry thm
+R6509:6518 LF.Basics <> bin_to_nat def
+R6480:6496 LF.Induction <> plus_n_0_firsttry thm
+R6509:6518 LF.Basics <> bin_to_nat def
+R6480:6496 LF.Induction <> plus_n_0_firsttry thm
+prf 6567:6577 <> nat_bin_nat
+binder 6588:6588 <> n:56
+R6616:6618 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6591:6600 LF.Basics <> bin_to_nat def
+R6603:6612 LF.Induction <> nat_to_bin def
+R6614:6614 LF.Induction <> n:56 var
+R6619:6619 LF.Induction <> n:56 var
+R6723:6737 LF.Induction <> bin_to_nat_incr thm
+R6723:6737 LF.Induction <> bin_to_nat_incr thm
+R6723:6737 LF.Induction <> bin_to_nat_incr thm

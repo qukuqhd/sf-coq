@@ -1,7 +1,700 @@
-DIGEST 0aaf53c2b200c4c1ed4f9303d7320563
+DIGEST e752a03fd778e90a543aeb8099869b5b
 FLF.Basics
-ind 10:10 <> A
-scheme 10:10 <> A_rect
-scheme 10:10 <> A_ind
-scheme 10:10 <> A_rec
-scheme 10:10 <> A_sind
+ind 45:47 <> day
+constr 63:68 <> monday
+constr 74:80 <> tuesday
+constr 86:94 <> wednesday
+constr 100:107 <> thursday
+constr 113:118 <> friday
+constr 124:131 <> saturday
+constr 137:142 <> sunday
+scheme 45:47 <> day_rect
+scheme 45:47 <> day_ind
+scheme 45:47 <> day_rec
+scheme 45:47 <> day_sind
+def 157:168 <> next_weekday
+R173:175 LF.Basics <> day ind
+binder 171:171 <> d:3
+R180:182 LF.Basics <> day ind
+R195:195 LF.Basics <> d:3 var
+R206:211 LF.Basics <> monday constr
+R216:222 LF.Basics <> tuesday constr
+R228:234 LF.Basics <> tuesday constr
+R239:247 LF.Basics <> wednesday constr
+R253:261 LF.Basics <> wednesday constr
+R266:273 LF.Basics <> thursday constr
+R279:286 LF.Basics <> thursday constr
+R291:296 LF.Basics <> friday constr
+R302:307 LF.Basics <> friday constr
+R312:317 LF.Basics <> monday constr
+R323:330 LF.Basics <> saturday constr
+R335:340 LF.Basics <> monday constr
+R346:351 LF.Basics <> sunday constr
+R356:361 LF.Basics <> monday constr
+R408:419 LF.Basics <> next_weekday def
+R421:426 LF.Basics <> friday constr
+R440:451 LF.Basics <> next_weekday def
+R454:465 LF.Basics <> next_weekday def
+R467:474 LF.Basics <> saturday constr
+def 501:509 <> test_next
+R513:513 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R550:553 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R514:525 LF.Basics <> next_weekday def
+R528:539 LF.Basics <> next_weekday def
+R541:548 LF.Basics <> saturday constr
+R554:560 LF.Basics <> tuesday constr
+mod 695:700 <> MyBool
+ind 717:720 MyBool bool
+constr 736:739 MyBool true
+constr 747:751 MyBool false
+scheme 717:720 MyBool bool_rect
+scheme 717:720 MyBool bool_ind
+scheme 717:720 MyBool bool_rec
+scheme 717:720 MyBool bool_sind
+def 774:777 MyBool negb
+R782:785 LF.Basics MyBool bool ind
+binder 780:780 <> b:7
+R788:791 LF.Basics MyBool bool ind
+R810:810 LF.Basics <> b:7 var
+R831:834 LF.Basics MyBool true constr
+R839:843 LF.Basics MyBool false constr
+R859:863 LF.Basics MyBool false constr
+R868:871 LF.Basics MyBool true constr
+def 926:929 MyBool andb
+R938:941 LF.Basics MyBool bool ind
+binder 931:932 <> b1:9
+binder 934:935 <> b2:10
+R945:948 LF.Basics MyBool bool ind
+R968:969 LF.Basics <> b1:9 var
+R990:993 LF.Basics MyBool true constr
+R998:999 LF.Basics <> b2:10 var
+R1015:1019 LF.Basics MyBool false constr
+R1024:1028 LF.Basics MyBool false constr
+def 1063:1065 MyBool orb
+R1074:1077 LF.Basics MyBool bool ind
+binder 1067:1068 <> b1:12
+binder 1070:1071 <> b2:13
+R1081:1084 LF.Basics MyBool bool ind
+R1103:1104 LF.Basics <> b1:12 var
+R1125:1128 LF.Basics MyBool true constr
+R1133:1136 LF.Basics MyBool true constr
+R1152:1156 LF.Basics MyBool false constr
+R1161:1162 LF.Basics <> b2:13 var
+def 1194:1202 MyBool test_orb1
+R1205:1205 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1220:1223 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1206:1208 LF.Basics MyBool orb def
+R1210:1213 LF.Basics MyBool true constr
+R1215:1219 LF.Basics MyBool false constr
+R1224:1227 LF.Basics MyBool true constr
+def 1278:1286 MyBool test_orb2
+R1289:1289 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1305:1308 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1290:1292 LF.Basics MyBool orb def
+R1294:1298 LF.Basics MyBool false constr
+R1300:1304 LF.Basics MyBool false constr
+R1309:1313 LF.Basics MyBool false constr
+def 1364:1372 MyBool test_orb3
+R1375:1375 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1390:1393 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1376:1378 LF.Basics MyBool orb def
+R1380:1384 LF.Basics MyBool false constr
+R1386:1389 LF.Basics MyBool true constr
+R1394:1397 LF.Basics MyBool true constr
+def 1448:1456 MyBool test_orb4
+R1459:1459 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1473:1476 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1460:1462 LF.Basics MyBool orb def
+R1464:1467 LF.Basics MyBool true constr
+R1469:1472 LF.Basics MyBool true constr
+R1477:1480 LF.Basics MyBool true constr
+R1591:1594 LF.Basics MyBool andb def
+not 1577:1577 MyBool :::x_'&&'_x
+R1628:1630 LF.Basics MyBool orb def
+not 1615:1615 MyBool :::x_'||'_x
+def 1651:1659 MyBool test_orb5
+R1684:1686 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1676:1679 LF.Basics MyBool :::x_'||'_x not
+R1667:1670 LF.Basics MyBool :::x_'||'_x not
+R1662:1666 LF.Basics MyBool false constr
+R1671:1675 LF.Basics MyBool false constr
+R1680:1683 LF.Basics MyBool true constr
+R1687:1690 LF.Basics MyBool true constr
+def 1833:1837 MyBool negb'
+R1841:1844 LF.Basics MyBool bool ind
+binder 1839:1839 <> b:15
+R1848:1851 LF.Basics MyBool bool ind
+R1867:1867 LF.Basics <> b:15 var
+R1892:1896 LF.Basics MyBool false constr
+R1874:1877 LF.Basics MyBool true constr
+def 1919:1923 MyBool andb'
+R1932:1935 LF.Basics MyBool bool ind
+binder 1925:1926 <> b1:16
+binder 1928:1929 <> b2:17
+R1939:1942 LF.Basics MyBool bool ind
+R1958:1959 LF.Basics <> b1:16 var
+R1982:1986 LF.Basics MyBool false constr
+R1966:1967 LF.Basics <> b2:17 var
+def 2009:2012 MyBool orb'
+R2021:2024 LF.Basics MyBool bool ind
+binder 2014:2015 <> b1:18
+binder 2017:2018 <> b2:19
+R2028:2031 LF.Basics MyBool bool ind
+R2047:2048 LF.Basics <> b1:18 var
+R2073:2074 LF.Basics <> b2:19 var
+R2055:2058 LF.Basics MyBool true constr
+def 2097:2101 MyBool nandb
+R2107:2110 LF.Basics MyBool bool ind
+binder 2104:2105 <> b1:20
+R2117:2120 LF.Basics MyBool bool ind
+binder 2114:2115 <> b2:21
+R2125:2128 LF.Basics MyBool bool ind
+R2141:2144 LF.Basics MyBool negb def
+R2147:2150 LF.Basics MyBool andb def
+R2152:2153 LF.Basics <> b1:20 var
+R2155:2156 LF.Basics <> b2:21 var
+def 2177:2187 MyBool test_nandb1
+R2190:2190 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2207:2210 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2191:2195 LF.Basics MyBool nandb def
+R2197:2200 LF.Basics MyBool true constr
+R2202:2206 LF.Basics MyBool false constr
+R2211:2214 LF.Basics MyBool true constr
+def 2269:2279 MyBool test_nandb2
+R2282:2282 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2300:2303 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2283:2287 LF.Basics MyBool nandb def
+R2289:2293 LF.Basics MyBool false constr
+R2295:2299 LF.Basics MyBool false constr
+R2304:2307 LF.Basics MyBool true constr
+def 2358:2368 MyBool test_nandb3
+R2371:2371 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2388:2391 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2372:2376 LF.Basics MyBool nandb def
+R2378:2382 LF.Basics MyBool false constr
+R2384:2387 LF.Basics MyBool true constr
+R2392:2395 LF.Basics MyBool true constr
+def 2446:2456 MyBool test_nandb4
+R2459:2459 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2475:2478 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2460:2464 LF.Basics MyBool nandb def
+R2466:2469 LF.Basics MyBool true constr
+R2471:2474 LF.Basics MyBool true constr
+R2479:2483 LF.Basics MyBool false constr
+def 2537:2541 MyBool andb3
+R2547:2550 LF.Basics MyBool bool ind
+binder 2544:2545 <> b1:22
+R2557:2560 LF.Basics MyBool bool ind
+binder 2554:2555 <> b2:23
+R2567:2570 LF.Basics MyBool bool ind
+binder 2564:2565 <> b3:24
+R2575:2578 LF.Basics MyBool bool ind
+R2591:2594 LF.Basics MyBool andb def
+R2596:2597 LF.Basics <> b1:22 var
+R2600:2603 LF.Basics MyBool andb def
+R2605:2606 LF.Basics <> b2:23 var
+R2608:2609 LF.Basics <> b3:24 var
+def 2625:2635 MyBool test_andb31
+R2638:2638 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2659:2662 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2639:2643 LF.Basics MyBool andb3 def
+R2645:2648 LF.Basics MyBool true constr
+R2650:2653 LF.Basics MyBool true constr
+R2655:2658 LF.Basics MyBool true constr
+R2663:2666 LF.Basics MyBool true constr
+def 2717:2727 MyBool test_andb32
+R2730:2730 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2752:2755 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2731:2735 LF.Basics MyBool andb3 def
+R2737:2741 LF.Basics MyBool false constr
+R2743:2746 LF.Basics MyBool true constr
+R2748:2751 LF.Basics MyBool true constr
+R2756:2760 LF.Basics MyBool false constr
+def 2811:2821 MyBool test_andb33
+R2824:2824 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2846:2849 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2825:2829 LF.Basics MyBool andb3 def
+R2831:2834 LF.Basics MyBool true constr
+R2836:2840 LF.Basics MyBool false constr
+R2842:2845 LF.Basics MyBool true constr
+R2850:2854 LF.Basics MyBool false constr
+def 2905:2915 MyBool test_andb34
+R2918:2918 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2940:2943 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2919:2923 LF.Basics MyBool andb3 def
+R2925:2928 LF.Basics MyBool true constr
+R2930:2933 LF.Basics MyBool true constr
+R2935:2939 LF.Basics MyBool false constr
+R2944:2948 LF.Basics MyBool false constr
+R3026:3029 LF.Basics MyBool true constr
+R3092:3095 LF.Basics MyBool negb def
+ind 3167:3169 MyBool rgb
+constr 3189:3191 MyBool red
+constr 3202:3206 MyBool green
+constr 3217:3220 MyBool blue
+scheme 3167:3169 MyBool rgb_rect
+scheme 3167:3169 MyBool rgb_ind
+scheme 3167:3169 MyBool rgb_rec
+scheme 3167:3169 MyBool rgb_sind
+ind 3237:3241 MyBool color
+constr 3261:3265 MyBool black
+constr 3276:3280 MyBool white
+constr 3291:3297 MyBool primary
+R3302:3304 LF.Basics MyBool rgb ind
+binder 3300:3300 <> p:29
+scheme 3237:3241 MyBool color_rect
+scheme 3237:3241 MyBool color_ind
+scheme 3237:3241 MyBool color_rec
+scheme 3237:3241 MyBool color_sind
+def 3439:3448 MyBool monochrome
+R3453:3457 LF.Basics MyBool color ind
+binder 3451:3451 <> c:30
+R3460:3463 LF.Basics MyBool bool ind
+R3482:3482 LF.Basics <> c:30 var
+R3498:3504 LF.Basics MyBool primary constr
+R3511:3515 LF.Basics MyBool false constr
+R3532:3535 LF.Basics MyBool true constr
+def 3570:3575 MyBool is_red
+R3579:3583 LF.Basics MyBool color ind
+binder 3577:3577 <> c:32
+R3586:3589 LF.Basics MyBool bool ind
+R3608:3608 LF.Basics <> c:32 var
+R3625:3631 LF.Basics MyBool primary constr
+R3633:3635 LF.Basics MyBool red constr
+R3640:3643 LF.Basics MyBool true constr
+R3660:3664 LF.Basics MyBool false constr
+ind 3698:3700 MyBool bit
+constr 3717:3717 MyBool t
+constr 3725:3725 MyBool f
+scheme 3698:3700 MyBool bit_rect
+scheme 3698:3700 MyBool bit_ind
+scheme 3698:3700 MyBool bit_rec
+scheme 3698:3700 MyBool bit_sind
+ind 3768:3773 MyBool nybble
+constr 3790:3793 MyBool bits
+R3808:3810 LF.Basics MyBool bit ind
+binder 3795:3796 <> b1:38
+binder 3798:3799 <> b2:39
+binder 3801:3802 <> b3:40
+binder 3804:3805 <> b4:41
+scheme 3768:3773 MyBool nybble_rect
+scheme 3768:3773 MyBool nybble_ind
+scheme 3768:3773 MyBool nybble_rec
+scheme 3768:3773 MyBool nybble_sind
+def 3834:3844 MyBool is_all_zero
+R3850:3855 LF.Basics MyBool nybble ind
+binder 3847:3848 <> nb:42
+R3859:3862 LF.Basics MyBool bool ind
+R3881:3882 LF.Basics <> nb:42 var
+R3899:3902 LF.Basics MyBool bits constr
+R3910:3910 LF.Basics MyBool f constr
+R3908:3908 LF.Basics MyBool f constr
+R3906:3906 LF.Basics MyBool f constr
+R3904:3904 LF.Basics MyBool f constr
+R3915:3918 LF.Basics MyBool true constr
+R3935:3939 LF.Basics MyBool false constr
+ind 4011:4013 MyBool nat
+constr 4029:4032 MyBool zero
+constr 4039:4039 MyBool S
+R4044:4046 LF.Basics <> nat:44 ind
+binder 4042:4042 <> n:46
+scheme 4011:4013 MyBool nat_rect
+scheme 4011:4013 MyBool nat_ind
+scheme 4011:4013 MyBool nat_rec
+scheme 4011:4013 MyBool nat_sind
+def 4070:4073 MyBool pred
+R4078:4080 LF.Basics MyBool nat ind
+binder 4076:4076 <> n:47
+R4084:4086 LF.Basics MyBool nat ind
+R4105:4105 LF.Basics <> n:47 var
+R4122:4125 LF.Basics MyBool zero constr
+R4130:4133 LF.Basics MyBool zero constr
+R4145:4145 LF.Basics MyBool S constr
+def 4206:4214 MyBool minus_tow
+R4219:4221 LF.Basics MyBool nat ind
+binder 4216:4216 <> n:49
+R4224:4226 LF.Basics MyBool nat ind
+R4245:4245 LF.Basics <> n:49 var
+R4262:4265 LF.Basics MyBool zero constr
+R4270:4273 LF.Basics MyBool zero constr
+R4285:4285 LF.Basics MyBool S constr
+R4287:4290 LF.Basics MyBool zero constr
+R4295:4298 LF.Basics MyBool zero constr
+R4310:4310 LF.Basics MyBool S constr
+R4313:4313 LF.Basics MyBool S constr
+def 4382:4386 MyBool evenb
+R4390:4392 LF.Basics MyBool nat ind
+binder 4388:4388 <> n:51
+R4395:4398 LF.Basics MyBool bool ind
+R4417:4417 LF.Basics <> n:51 var
+R4434:4437 LF.Basics MyBool zero constr
+R4442:4445 LF.Basics MyBool true constr
+R4457:4457 LF.Basics MyBool S constr
+R4459:4462 LF.Basics MyBool zero constr
+R4467:4471 LF.Basics MyBool false constr
+R4483:4483 LF.Basics MyBool S constr
+R4486:4486 LF.Basics MyBool S constr
+R4495:4499 LF.Basics <> evenb:52 def
+def 4538:4541 MyBool oddb
+R4545:4547 LF.Basics MyBool nat ind
+binder 4543:4543 <> n:54
+R4550:4553 LF.Basics MyBool bool ind
+R4566:4569 LF.Basics MyBool negb def
+R4572:4576 LF.Basics MyBool evenb def
+R4578:4578 LF.Basics <> n:54 var
+def 4601:4604 MyBool plus
+R4610:4612 LF.Basics MyBool nat ind
+binder 4606:4606 <> m:55
+binder 4608:4608 <> n:56
+R4615:4617 LF.Basics MyBool nat ind
+R4636:4636 LF.Basics <> m:55 var
+R4652:4655 LF.Basics MyBool zero constr
+R4660:4660 LF.Basics <> n:56 var
+R4671:4671 LF.Basics MyBool S constr
+R4679:4679 LF.Basics MyBool S constr
+R4682:4685 LF.Basics <> plus:57 def
+R4690:4690 LF.Basics <> n:56 var
+def 4724:4727 MyBool mult
+R4733:4735 LF.Basics MyBool nat ind
+binder 4729:4729 <> m:59
+binder 4731:4731 <> n:60
+R4738:4740 LF.Basics MyBool nat ind
+R4759:4759 LF.Basics <> m:59 var
+R4776:4779 LF.Basics MyBool zero constr
+R4784:4787 LF.Basics MyBool zero constr
+R4799:4799 LF.Basics MyBool S constr
+R4807:4810 LF.Basics MyBool plus def
+R4812:4812 LF.Basics <> n:60 var
+R4815:4818 LF.Basics <> mult:61 def
+R4823:4823 LF.Basics <> n:60 var
+def 4857:4865 MyBool factorial
+R4870:4872 LF.Basics MyBool nat ind
+binder 4868:4868 <> n:63
+R4877:4879 LF.Basics MyBool nat ind
+R4898:4898 LF.Basics <> n:63 var
+R4915:4918 LF.Basics MyBool zero constr
+R4923:4923 LF.Basics MyBool S constr
+R4925:4928 LF.Basics MyBool zero constr
+R4940:4940 LF.Basics MyBool S constr
+R4942:4945 LF.Basics MyBool zero constr
+R4950:4950 LF.Basics MyBool S constr
+R4952:4955 LF.Basics MyBool zero constr
+R4967:4967 LF.Basics MyBool S constr
+R4975:4978 LF.Basics MyBool mult def
+R4985:4993 LF.Basics <> factorial:64 def
+def 5030:5034 MyBool minus
+R5040:5042 LF.Basics MyBool nat ind
+binder 5036:5036 <> m:66
+binder 5038:5038 <> n:67
+R5045:5047 LF.Basics MyBool nat ind
+R5069:5069 LF.Basics <> n:67 var
+R5066:5066 LF.Basics <> m:66 var
+R5088:5091 LF.Basics MyBool zero constr
+R5096:5096 LF.Basics <> m:66 var
+R5108:5111 LF.Basics MyBool zero constr
+R5118:5121 LF.Basics MyBool zero constr
+R5133:5133 LF.Basics MyBool S constr
+R5138:5138 LF.Basics MyBool S constr
+R5146:5150 LF.Basics <> minus:68 def
+def 5189:5191 MyBool exp
+R5205:5207 LF.Basics MyBool nat ind
+binder 5193:5196 <> base:71
+binder 5198:5202 <> power:72
+R5211:5213 LF.Basics MyBool nat ind
+R5232:5236 LF.Basics <> power:72 var
+R5253:5256 LF.Basics MyBool zero constr
+R5261:5261 LF.Basics MyBool S constr
+R5263:5266 LF.Basics MyBool zero constr
+R5278:5278 LF.Basics MyBool S constr
+R5286:5289 LF.Basics MyBool mult def
+R5291:5294 LF.Basics <> base:71 var
+R5297:5299 LF.Basics <> exp:73 def
+R5301:5304 LF.Basics <> base:71 var
+def 5341:5343 MyBool eqb
+R5350:5352 LF.Basics MyBool nat ind
+binder 5345:5345 <> m:75
+binder 5347:5347 <> n:76
+R5355:5358 LF.Basics MyBool bool ind
+R5381:5381 LF.Basics <> n:76 var
+R5377:5377 LF.Basics <> m:75 var
+R5398:5401 LF.Basics MyBool zero constr
+R5403:5406 LF.Basics MyBool zero constr
+R5411:5414 LF.Basics MyBool true constr
+R5429:5432 LF.Basics MyBool zero constr
+R5437:5441 LF.Basics MyBool false constr
+R5453:5456 LF.Basics MyBool zero constr
+R5463:5467 LF.Basics MyBool false constr
+R5479:5479 LF.Basics MyBool S constr
+R5484:5484 LF.Basics MyBool S constr
+R5492:5494 LF.Basics <> eqb:77 def
+def 5534:5536 MyBool leb
+R5543:5545 LF.Basics MyBool nat ind
+binder 5538:5538 <> m:80
+binder 5540:5540 <> n:81
+R5548:5551 LF.Basics MyBool bool ind
+R5574:5574 LF.Basics <> n:81 var
+R5570:5570 LF.Basics <> m:80 var
+R5593:5596 LF.Basics MyBool zero constr
+R5601:5605 LF.Basics MyBool false constr
+R5617:5620 LF.Basics MyBool zero constr
+R5627:5630 LF.Basics MyBool true constr
+R5642:5642 LF.Basics MyBool S constr
+R5647:5647 LF.Basics MyBool S constr
+R5655:5657 LF.Basics <> leb:82 def
+def 5697:5699 MyBool ltb
+R5706:5708 LF.Basics MyBool nat ind
+binder 5701:5701 <> m:85
+binder 5703:5703 <> n:86
+R5711:5714 LF.Basics MyBool bool ind
+R5737:5737 LF.Basics <> n:86 var
+R5733:5733 LF.Basics <> m:85 var
+R5756:5759 LF.Basics MyBool zero constr
+R5764:5768 LF.Basics MyBool false constr
+R5780:5783 LF.Basics MyBool zero constr
+R5790:5793 LF.Basics MyBool true constr
+R5805:5805 LF.Basics MyBool S constr
+R5810:5810 LF.Basics MyBool S constr
+R5818:5820 LF.Basics <> ltb:87 def
+R5850:5855 LF.Basics MyBool <> mod
+prf 5870:5877 <> plus_0_n
+R5891:5893 Corelib.Init.Datatypes <> nat ind
+binder 5888:5888 <> n:90
+R5902:5904 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5898:5900 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5901:5901 LF.Basics <> n:90 var
+R5905:5905 LF.Basics <> n:90 var
+prf 5958:5965 <> plus_1_n
+R5977:5979 Corelib.Init.Datatypes <> nat ind
+binder 5975:5975 <> n:91
+R5988:5990 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5984:5986 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5987:5987 LF.Basics <> n:91 var
+R5991:5991 Corelib.Init.Datatypes <> S constr
+R5993:5993 LF.Basics <> n:91 var
+prf 6044:6051 <> mult_0_n
+R6063:6065 Corelib.Init.Datatypes <> nat ind
+binder 6061:6061 <> n:92
+R6074:6077 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6070:6072 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R6073:6073 LF.Basics <> n:92 var
+prf 6130:6144 <> plus_id_example
+R6160:6162 Corelib.Init.Datatypes <> nat ind
+binder 6155:6155 <> m:93
+binder 6157:6157 <> n:94
+R6175:6178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6171:6173 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6170:6170 LF.Basics <> n:94 var
+R6174:6174 LF.Basics <> m:93 var
+R6184:6186 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6180:6182 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6179:6179 LF.Basics <> n:94 var
+R6183:6183 LF.Basics <> n:94 var
+R6188:6190 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6187:6187 LF.Basics <> m:93 var
+R6191:6191 LF.Basics <> m:93 var
+prf 6270:6285 <> plus_id_exercise
+R6304:6306 Corelib.Init.Datatypes <> nat ind
+binder 6296:6296 <> n:95
+binder 6298:6298 <> m:96
+binder 6300:6300 <> o:97
+R6316:6319 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6312:6314 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6311:6311 LF.Basics <> n:95 var
+R6315:6315 LF.Basics <> m:96 var
+R6325:6328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6321:6323 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6320:6320 LF.Basics <> m:96 var
+R6324:6324 LF.Basics <> o:97 var
+R6334:6336 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6330:6332 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6329:6329 LF.Basics <> n:95 var
+R6333:6333 LF.Basics <> m:96 var
+R6338:6340 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6337:6337 LF.Basics <> m:96 var
+R6341:6341 LF.Basics <> o:97 var
+prf 6455:6466 <> mult_n_0_m_0
+R6482:6484 Corelib.Init.Datatypes <> nat ind
+binder 6477:6477 <> m:98
+binder 6479:6479 <> n:99
+R6507:6509 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6491:6491 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6497:6501 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6506:6506 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6493:6495 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R6492:6492 LF.Basics <> n:99 var
+R6503:6504 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R6502:6502 LF.Basics <> m:98 var
+R6553:6560 Corelib.Init.Peano <> mult_n_O thm
+R6553:6560 Corelib.Init.Peano <> mult_n_O thm
+R6553:6560 Corelib.Init.Peano <> mult_n_O thm
+R6582:6589 Corelib.Init.Peano <> mult_n_O thm
+R6582:6589 Corelib.Init.Peano <> mult_n_O thm
+R6582:6589 Corelib.Init.Peano <> mult_n_O thm
+prf 6637:6644 <> mult_n_1
+R6658:6660 Corelib.Init.Datatypes <> nat ind
+binder 6655:6655 <> n:100
+R6672:6674 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6668:6670 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R6667:6667 LF.Basics <> n:100 var
+R6675:6675 LF.Basics <> n:100 var
+prf 6813:6833 <> plus_1_neq_0_firsttry
+R6848:6850 Corelib.Init.Datatypes <> nat ind
+binder 6844:6844 <> n:101
+R6855:6855 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6874:6877 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6856:6862 Corelib.Init.Nat <> eqb def
+R6866:6868 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R6865:6865 LF.Basics <> n:101 var
+R6878:6882 Corelib.Init.Datatypes <> false constr
+prf 7003:7014 <> plus_1_neq_0
+R7029:7031 Corelib.Init.Datatypes <> nat ind
+binder 7025:7025 <> n:102
+R7036:7036 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7055:7058 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7037:7043 Corelib.Init.Nat <> eqb def
+R7047:7049 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7046:7046 LF.Basics <> n:102 var
+R7059:7063 Corelib.Init.Datatypes <> false constr
+prf 7160:7174 <> negb_involutive
+R7189:7192 Corelib.Init.Datatypes <> bool ind
+binder 7185:7185 <> b:103
+R7212:7214 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7199:7202 Corelib.Init.Datatypes <> negb def
+R7205:7208 Corelib.Init.Datatypes <> negb def
+R7210:7210 LF.Basics <> b:103 var
+R7215:7215 LF.Basics <> b:103 var
+prf 7302:7316 <> andb_true_elim2
+R7333:7336 Corelib.Init.Datatypes <> bool ind
+binder 7327:7327 <> b:104
+binder 7329:7329 <> c:105
+R7356:7359 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7349:7351 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7341:7344 Corelib.Init.Datatypes <> andb def
+R7348:7348 LF.Basics <> c:105 var
+R7346:7346 LF.Basics <> b:104 var
+R7352:7355 Corelib.Init.Datatypes <> true constr
+R7361:7363 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7360:7360 LF.Basics <> c:105 var
+R7364:7367 Corelib.Init.Datatypes <> true constr
+prf 7543:7558 <> zero_nbeq_plus_1
+R7572:7574 Corelib.Init.Datatypes <> nat ind
+binder 7569:7569 <> n:106
+R7581:7581 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7599:7602 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7582:7588 Corelib.Init.Nat <> eqb def
+R7594:7596 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7593:7593 LF.Basics <> n:106 var
+R7603:7607 Corelib.Init.Datatypes <> false constr
+prf 7728:7738 <> andb_eq_orb
+R7758:7761 Corelib.Init.Datatypes <> bool ind
+binder 7752:7752 <> b:107
+binder 7754:7754 <> c:108
+R7767:7767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7786:7792 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7776:7778 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7768:7771 Corelib.Init.Datatypes <> andb def
+R7775:7775 LF.Basics <> c:108 var
+R7773:7773 LF.Basics <> b:107 var
+R7779:7781 Corelib.Init.Datatypes <> orb def
+R7785:7785 LF.Basics <> c:108 var
+R7783:7783 LF.Basics <> b:107 var
+R7794:7796 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7793:7793 LF.Basics <> b:107 var
+R7797:7797 LF.Basics <> c:108 var
+ind 8039:8041 <> bin
+constr 8053:8053 <> Z
+constr 8057:8057 <> A
+constr 8069:8069 <> B
+R8062:8064 LF.Basics <> bin:109 ind
+binder 8060:8060 <> n:111
+R8074:8076 LF.Basics <> bin:109 ind
+binder 8072:8072 <> n:112
+scheme 8039:8041 <> bin_rect
+scheme 8039:8041 <> bin_ind
+scheme 8039:8041 <> bin_rec
+scheme 8039:8041 <> bin_sind
+def 8090:8093 <> incr
+R8098:8100 LF.Basics <> bin ind
+binder 8096:8096 <> m:113
+R8105:8107 LF.Basics <> bin ind
+R8122:8122 LF.Basics <> m:113 var
+R8135:8135 LF.Basics <> Z constr
+R8140:8140 LF.Basics <> B constr
+R8142:8142 LF.Basics <> Z constr
+R8150:8150 LF.Basics <> A constr
+R8158:8158 LF.Basics <> B constr
+R8169:8169 LF.Basics <> B constr
+R8177:8177 LF.Basics <> A constr
+R8180:8183 LF.Basics <> incr:114 def
+def 8208:8217 <> bin_to_nat
+R8222:8224 LF.Basics <> bin ind
+binder 8220:8220 <> m:116
+R8229:8231 Corelib.Init.Datatypes <> nat ind
+R8246:8246 LF.Basics <> m:116 var
+R8259:8259 LF.Basics <> Z constr
+R8272:8272 LF.Basics <> A constr
+R8281:8284 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R8298:8298 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R8285:8294 LF.Basics <> bin_to_nat:117 def
+R8306:8306 LF.Basics <> B constr
+R8314:8314 Corelib.Init.Datatypes <> S constr
+R8318:8321 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R8335:8335 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R8322:8331 LF.Basics <> bin_to_nat:117 def
+def 8357:8370 <> test_bin_incr1
+R8374:8374 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8385:8388 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8375:8378 LF.Basics <> incr def
+R8381:8381 LF.Basics <> B constr
+R8383:8383 LF.Basics <> Z constr
+R8389:8389 LF.Basics <> A constr
+R8392:8392 LF.Basics <> B constr
+R8394:8394 LF.Basics <> Z constr
+def 8446:8459 <> test_bin_incr2
+R8463:8463 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8478:8481 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8464:8467 LF.Basics <> incr def
+R8470:8470 LF.Basics <> A constr
+R8473:8473 LF.Basics <> B constr
+R8475:8475 LF.Basics <> Z constr
+R8482:8482 LF.Basics <> B constr
+R8485:8485 LF.Basics <> B constr
+R8487:8487 LF.Basics <> Z constr
+def 8539:8552 <> test_bin_incr3
+R8556:8556 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8571:8574 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8557:8560 LF.Basics <> incr def
+R8563:8563 LF.Basics <> B constr
+R8566:8566 LF.Basics <> B constr
+R8568:8568 LF.Basics <> Z constr
+R8575:8575 LF.Basics <> A constr
+R8578:8578 LF.Basics <> A constr
+R8581:8581 LF.Basics <> B constr
+R8583:8583 LF.Basics <> Z constr
+def 8636:8649 <> test_bin_incr4
+R8673:8675 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8653:8662 LF.Basics <> bin_to_nat def
+R8665:8665 LF.Basics <> A constr
+R8668:8668 LF.Basics <> B constr
+R8670:8670 LF.Basics <> Z constr
+def 8727:8740 <> test_bin_incr5
+R8775:8777 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8752:8761 LF.Basics <> bin_to_nat def
+R8764:8767 LF.Basics <> incr def
+R8770:8770 LF.Basics <> B constr
+R8772:8772 LF.Basics <> Z constr
+R8779:8781 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8782:8791 LF.Basics <> bin_to_nat def
+R8794:8794 LF.Basics <> B constr
+R8796:8796 LF.Basics <> Z constr
+def 8848:8861 <> test_bin_incr6
+R8903:8905 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8873:8882 LF.Basics <> bin_to_nat def
+R8885:8888 LF.Basics <> incr def
+R8891:8894 LF.Basics <> incr def
+R8897:8897 LF.Basics <> B constr
+R8899:8899 LF.Basics <> Z constr
+R8907:8909 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8910:8919 LF.Basics <> bin_to_nat def
+R8922:8922 LF.Basics <> B constr
+R8924:8924 LF.Basics <> Z constr
