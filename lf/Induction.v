@@ -85,6 +85,10 @@ Fixpoint evenb (n:nat):bool :=
     end
 .
 
+Definition oddb (n:nat):bool :=
+    negb (evenb n)
+.
+
 
 Lemma evenb_minus_tow : forall n:nat,
     evenb (S (S n)) = evenb n
