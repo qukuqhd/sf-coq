@@ -472,6 +472,90 @@ Module Exercises.
   Definition prod_curry {X Y Z : Type}
   (f : X * Y -> Z) (x : X) (y : Y) : Z := f (x, y).
 
-  
+  Definition prod_uncurry {X Y Z : Type}
+  (f : X -> Y -> Z) (p : X * Y) : Z :=
+    let (x,y) := p in
+      f x y
+  .
+  Theorem uncurry_curry : forall (X Y Z : Type) (f : X * Y -> Z) (p : X * Y),
+  prod_uncurry (prod_curry f) p = f p.
+  Proof.
+    intros X Y Z f p.
+    induction p as [].
+    - simpl. reflexivity.
+  Qed.
 
+  Example test_map1': map (plus 3) [2;0;2] = [5;3;5].
+  Proof. simpl. reflexivity. Qed.
+
+    Check @prod_uncurry.
+  Theorem curry_uncurry : forall (X Y Z : Type)
+                          (f : (X * Y) -> Z) (p : X * Y),
+  prod_uncurry (prod_curry f) p = f p
+  .
+  
+  Proof.
+  intros X Y Z f p.
+  induction p as [].
+  - simpl. reflexivity. 
+  Qed.
+
+  Module Church.
+    Definition cnat := forall X : Type, (X -> X) -> X -> X.
+    Definition one : cnat :=
+    fun (X : Type) (f : X -> X) (x : X) => f x.
+
+    Definition two : cnat :=
+    fun (X : Type) (f : X -> X) (x : X) => f (f x).
+
+    Definition zero : cnat :=
+    fun (X : Type) (f : X -> X) (x : X) => x.
+
+    Definition three : cnat := @doit3times.
+    
+    Definition succ (n : cnat) : cnat:=
+      fun (X : Type) (f : X -> X) (x : X) => f (n X f x)
+    .
+
+    Example succ_1 : succ zero = one.
+    Proof. simpl. reflexivity. Qed.
+    Example succ_2 : succ one = two.
+    Proof. simpl. reflexivity. Qed.
+    Example succ_3 : succ two = three.
+    Proof. simpl. reflexivity. Qed.
+
+    Definition plus (n m : cnat) : cnat :=
+    fun (X : Type) (f : X -> X) (x : X) =>  (n X f  (m X f x))
+    .
+
+    Example plus_1 : plus zero one = one.
+    Proof. simpl. reflexivity. Qed.
+    Example plus_2 : plus two three = plus three two.
+    Proof. simpl. reflexivity. Qed.
+    Example plus_3 :
+      plus (plus two two) three = plus one (plus three three).
+    Proof. simpl. reflexivity. Qed.
+
+    Definition mult (n m : cnat) : cnat :=
+    fun (X : Type) (f : X -> X) (x : X) => n X (m X f) x.
+
+    Example mult_1 : mult one one = one.
+    Proof. simpl. reflexivity. Qed.
+    Example mult_2 : mult zero (plus three three) = zero.
+    Proof. simpl. reflexivity. Qed.
+    Example mult_3 : mult two three = plus three three.
+    Proof. simpl. reflexivity. Qed.
+
+    Definition exp (n m : cnat) : cnat :=
+    fun (X : Type) => m (X -> X) (n X)
+    .
+    Example exp_1 : exp two two = plus two two.
+    Proof. simpl. reflexivity. Qed.
+    Example exp_2 : exp three zero = one.
+    Proof. simpl. reflexivity. Qed.
+    Example exp_3 : exp three two = plus (mult two (mult two two)) one.
+    Proof. simpl. reflexivity. Qed.
+  End Church.
+  
 End Exercises.
+

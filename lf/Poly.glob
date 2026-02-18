@@ -1,4 +1,4 @@
-DIGEST abb5bc77faec7b489312b0c40ea3c3d6
+DIGEST 91b13ce3e63a74f2c94c43162a365a08
 FLF.Poly
 R23:27 LF.Lists <> <> lib
 ind 217:220 <> list
@@ -1299,4 +1299,283 @@ R11722:11723 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_'
 R11725:11725 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R11721:11721 LF.Poly <> x:184 var
 R11724:11724 LF.Poly <> y:185 var
-R11737:11745 LF.Poly Exercises <> mod
+def 11742:11753 Exercises prod_uncurry
+binder 11756:11756 <> X:186
+binder 11758:11758 <> Y:187
+binder 11760:11760 <> Z:188
+R11778:11781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11777:11777 LF.Poly <> X:186 var
+R11783:11786 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11782:11782 LF.Poly <> Y:187 var
+R11787:11787 LF.Poly <> Z:188 var
+binder 11773:11773 <> f:189
+R11796:11798 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11795:11795 LF.Poly <> X:186 var
+R11799:11799 LF.Poly <> Y:187 var
+binder 11791:11791 <> p:190
+R11804:11804 LF.Poly <> Z:188 var
+R11826:11826 LF.Poly <> p:190 var
+binder 11818:11818 <> x:191
+binder 11820:11820 <> y:192
+R11837:11837 LF.Poly <> f:189 var
+R11841:11841 LF.Poly <> y:192 var
+R11839:11839 LF.Poly <> x:191 var
+prf 11857:11869 Exercises uncurry_curry
+binder 11881:11881 <> X:193
+binder 11883:11883 <> Y:194
+binder 11885:11885 <> Z:195
+R11905:11908 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11901:11903 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11900:11900 LF.Poly <> X:193 var
+R11904:11904 LF.Poly <> Y:194 var
+R11909:11909 LF.Poly <> Z:195 var
+binder 11896:11896 <> f:196
+R11918:11920 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11917:11917 LF.Poly <> X:193 var
+R11921:11921 LF.Poly <> Y:194 var
+binder 11913:11913 <> p:197
+R11956:11958 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11927:11938 LF.Poly Exercises prod_uncurry def
+R11955:11955 LF.Poly <> p:197 var
+R11941:11950 LF.Poly Exercises prod_curry def
+R11952:11952 LF.Poly <> f:196 var
+R11959:11959 LF.Poly <> f:196 var
+R11961:11961 LF.Poly <> p:197 var
+def 12062:12071 Exercises test_map1'
+R12094:12096 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12074:12076 LF.Poly <> map def
+R12087:12087 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12089:12089 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12091:12091 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12093:12093 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12079:12082 Corelib.Init.Peano <> plus abbrev
+R12097:12097 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12099:12099 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12101:12101 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12103:12103 LF.Poly <> :::'['_x_';'_'..'_';'_x_']' not
+R12152:12163 LF.Poly Exercises prod_uncurry def
+prf 12176:12188 Exercises curry_uncurry
+binder 12200:12200 <> X:198
+binder 12202:12202 <> Y:199
+binder 12204:12204 <> Z:200
+R12245:12245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12251:12255 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12247:12249 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12246:12246 LF.Poly <> X:198 var
+R12250:12250 LF.Poly <> Y:199 var
+R12256:12256 LF.Poly <> Z:200 var
+binder 12241:12241 <> f:201
+R12265:12267 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R12264:12264 LF.Poly <> X:198 var
+R12268:12268 LF.Poly <> Y:199 var
+binder 12260:12260 <> p:202
+R12303:12305 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12274:12285 LF.Poly Exercises prod_uncurry def
+R12302:12302 LF.Poly <> p:202 var
+R12288:12297 LF.Poly Exercises prod_curry def
+R12299:12299 LF.Poly <> f:201 var
+R12306:12306 LF.Poly <> f:201 var
+R12308:12308 LF.Poly <> p:202 var
+mod 12409:12414 <> Exercises.Church
+def 12432:12435 Exercises.Church cnat
+binder 12447:12447 <> X:203
+R12457:12457 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12464:12468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12459:12462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12458:12458 LF.Poly <> X:203 var
+R12463:12463 LF.Poly <> X:203 var
+R12470:12473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12469:12469 LF.Poly <> X:203 var
+R12474:12474 LF.Poly <> X:203 var
+def 12492:12494 Exercises.Church one
+R12498:12501 LF.Poly Exercises.Church cnat def
+binder 12515:12515 <> X:204
+R12531:12534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12530:12530 LF.Poly <> X:204 var
+R12535:12535 LF.Poly <> X:204 var
+binder 12526:12526 <> f:205
+R12543:12543 LF.Poly <> X:204 var
+binder 12539:12539 <> x:206
+R12549:12549 LF.Poly <> f:205 var
+R12551:12551 LF.Poly <> x:206 var
+def 12570:12572 Exercises.Church two
+R12576:12579 LF.Poly Exercises.Church cnat def
+binder 12593:12593 <> X:207
+R12609:12612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12608:12608 LF.Poly <> X:207 var
+R12613:12613 LF.Poly <> X:207 var
+binder 12604:12604 <> f:208
+R12621:12621 LF.Poly <> X:207 var
+binder 12617:12617 <> x:209
+R12627:12627 LF.Poly <> f:208 var
+R12630:12630 LF.Poly <> f:208 var
+R12632:12632 LF.Poly <> x:209 var
+def 12652:12655 Exercises.Church zero
+R12659:12662 LF.Poly Exercises.Church cnat def
+binder 12676:12676 <> X:210
+R12692:12695 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12691:12691 LF.Poly <> X:210 var
+R12696:12696 LF.Poly <> X:210 var
+binder 12687:12687 <> f:211
+R12704:12704 LF.Poly <> X:210 var
+binder 12700:12700 <> x:212
+R12710:12710 LF.Poly <> x:212 var
+def 12729:12733 Exercises.Church three
+R12737:12740 LF.Poly Exercises.Church cnat def
+R12746:12755 LF.Poly <> doit3times def
+def 12778:12781 Exercises.Church succ
+R12788:12791 LF.Poly Exercises.Church cnat def
+binder 12784:12784 <> n:213
+R12796:12799 LF.Poly Exercises.Church cnat def
+binder 12814:12814 <> X:214
+R12830:12833 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12829:12829 LF.Poly <> X:214 var
+R12834:12834 LF.Poly <> X:214 var
+binder 12825:12825 <> f:215
+R12842:12842 LF.Poly <> X:214 var
+binder 12838:12838 <> x:216
+R12848:12848 LF.Poly <> f:215 var
+R12851:12851 LF.Poly <> n:213 var
+R12853:12853 LF.Poly <> X:214 var
+R12855:12855 LF.Poly <> f:215 var
+R12857:12857 LF.Poly <> x:216 var
+def 12879:12884 Exercises.Church succ_1
+R12897:12899 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12888:12891 LF.Poly Exercises.Church succ def
+R12893:12896 LF.Poly Exercises.Church zero def
+R12900:12902 LF.Poly Exercises.Church one def
+def 12953:12958 Exercises.Church succ_2
+R12970:12972 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12962:12965 LF.Poly Exercises.Church succ def
+R12967:12969 LF.Poly Exercises.Church one def
+R12973:12975 LF.Poly Exercises.Church two def
+def 13026:13031 Exercises.Church succ_3
+R13043:13045 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13035:13038 LF.Poly Exercises.Church succ def
+R13040:13042 LF.Poly Exercises.Church two def
+R13046:13050 LF.Poly Exercises.Church three def
+def 13105:13108 Exercises.Church plus
+R13117:13120 LF.Poly Exercises.Church cnat def
+binder 13111:13111 <> n:217
+binder 13113:13113 <> m:218
+R13125:13128 LF.Poly Exercises.Church cnat def
+binder 13142:13142 <> X:219
+R13158:13161 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13157:13157 LF.Poly <> X:219 var
+R13162:13162 LF.Poly <> X:219 var
+binder 13153:13153 <> f:220
+R13170:13170 LF.Poly <> X:219 var
+binder 13166:13166 <> x:221
+R13178:13178 LF.Poly <> n:217 var
+R13180:13180 LF.Poly <> X:219 var
+R13182:13182 LF.Poly <> f:220 var
+R13186:13186 LF.Poly <> m:218 var
+R13188:13188 LF.Poly <> X:219 var
+R13190:13190 LF.Poly <> f:220 var
+R13192:13192 LF.Poly <> x:221 var
+def 13215:13220 Exercises.Church plus_1
+R13237:13239 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13224:13227 LF.Poly Exercises.Church plus def
+R13229:13232 LF.Poly Exercises.Church zero def
+R13234:13236 LF.Poly Exercises.Church one def
+R13240:13242 LF.Poly Exercises.Church one def
+def 13293:13298 Exercises.Church plus_2
+R13316:13318 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13302:13305 LF.Poly Exercises.Church plus def
+R13307:13309 LF.Poly Exercises.Church two def
+R13311:13315 LF.Poly Exercises.Church three def
+R13319:13322 LF.Poly Exercises.Church plus def
+R13324:13328 LF.Poly Exercises.Church three def
+R13330:13332 LF.Poly Exercises.Church two def
+def 13383:13388 Exercises.Church plus_3
+R13423:13425 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13398:13401 LF.Poly Exercises.Church plus def
+R13404:13407 LF.Poly Exercises.Church plus def
+R13409:13411 LF.Poly Exercises.Church two def
+R13413:13415 LF.Poly Exercises.Church two def
+R13418:13422 LF.Poly Exercises.Church three def
+R13426:13429 LF.Poly Exercises.Church plus def
+R13431:13433 LF.Poly Exercises.Church one def
+R13436:13439 LF.Poly Exercises.Church plus def
+R13441:13445 LF.Poly Exercises.Church three def
+R13447:13451 LF.Poly Exercises.Church three def
+def 13507:13510 Exercises.Church mult
+R13519:13522 LF.Poly Exercises.Church cnat def
+binder 13513:13513 <> n:222
+binder 13515:13515 <> m:223
+R13527:13530 LF.Poly Exercises.Church cnat def
+binder 13544:13544 <> X:224
+R13560:13563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13559:13559 LF.Poly <> X:224 var
+R13564:13564 LF.Poly <> X:224 var
+binder 13555:13555 <> f:225
+R13572:13572 LF.Poly <> X:224 var
+binder 13568:13568 <> x:226
+R13578:13578 LF.Poly <> n:222 var
+R13580:13580 LF.Poly <> X:224 var
+R13583:13583 LF.Poly <> m:223 var
+R13585:13585 LF.Poly <> X:224 var
+R13587:13587 LF.Poly <> f:225 var
+R13590:13590 LF.Poly <> x:226 var
+def 13606:13611 Exercises.Church mult_1
+R13627:13629 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13615:13618 LF.Poly Exercises.Church mult def
+R13620:13622 LF.Poly Exercises.Church one def
+R13624:13626 LF.Poly Exercises.Church one def
+R13630:13632 LF.Poly Exercises.Church one def
+def 13683:13688 Exercises.Church mult_2
+R13720:13722 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13692:13695 LF.Poly Exercises.Church mult def
+R13697:13700 LF.Poly Exercises.Church zero def
+R13703:13706 LF.Poly Exercises.Church plus def
+R13708:13712 LF.Poly Exercises.Church three def
+R13714:13718 LF.Poly Exercises.Church three def
+R13723:13726 LF.Poly Exercises.Church zero def
+def 13777:13782 Exercises.Church mult_3
+R13800:13802 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13786:13789 LF.Poly Exercises.Church mult def
+R13791:13793 LF.Poly Exercises.Church two def
+R13795:13799 LF.Poly Exercises.Church three def
+R13803:13806 LF.Poly Exercises.Church plus def
+R13808:13812 LF.Poly Exercises.Church three def
+R13814:13818 LF.Poly Exercises.Church three def
+def 13873:13875 Exercises.Church exp
+R13884:13887 LF.Poly Exercises.Church cnat def
+binder 13878:13878 <> n:227
+binder 13880:13880 <> m:228
+R13892:13895 LF.Poly Exercises.Church cnat def
+binder 13909:13909 <> X:229
+R13922:13922 LF.Poly <> m:228 var
+R13926:13929 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13925:13925 LF.Poly <> X:229 var
+R13930:13930 LF.Poly <> X:229 var
+R13934:13934 LF.Poly <> n:227 var
+R13936:13936 LF.Poly <> X:229 var
+def 13957:13961 Exercises.Church exp_1
+R13976:13978 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13965:13967 LF.Poly Exercises.Church exp def
+R13969:13971 LF.Poly Exercises.Church two def
+R13973:13975 LF.Poly Exercises.Church two def
+R13979:13982 LF.Poly Exercises.Church plus def
+R13984:13986 LF.Poly Exercises.Church two def
+R13988:13990 LF.Poly Exercises.Church two def
+def 14041:14045 Exercises.Church exp_2
+R14063:14065 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14049:14051 LF.Poly Exercises.Church exp def
+R14053:14057 LF.Poly Exercises.Church three def
+R14059:14062 LF.Poly Exercises.Church zero def
+R14066:14068 LF.Poly Exercises.Church one def
+def 14119:14123 Exercises.Church exp_3
+R14140:14142 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14127:14129 LF.Poly Exercises.Church exp def
+R14131:14135 LF.Poly Exercises.Church three def
+R14137:14139 LF.Poly Exercises.Church two def
+R14143:14146 LF.Poly Exercises.Church plus def
+R14149:14152 LF.Poly Exercises.Church mult def
+R14154:14156 LF.Poly Exercises.Church two def
+R14159:14162 LF.Poly Exercises.Church mult def
+R14164:14166 LF.Poly Exercises.Church two def
+R14168:14170 LF.Poly Exercises.Church two def
+R14174:14176 LF.Poly Exercises.Church one def
+R14221:14226 LF.Poly Exercises.Church <> mod
+R14236:14244 LF.Poly Exercises <> mod
